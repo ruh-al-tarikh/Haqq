@@ -1,10 +1,22 @@
-$ConfigContent = @"
-title: "HAQ - Forgotten Islamic Stories"
-description: "Explore forgotten Islamic history, prophetic stories, and Quranic mysteries."
-baseurl: ""
-url: "https://ruh-al-tarikh.github.io/haqq"
-theme: minima
+title: 'HAQ - Forgotten Islamic Stories'
+description: 'Discover forgotten Islamic history, Quranic mysteries, and prophetic storytelling.'
+baseurl: ''
+url: 'https://ruh-al-tarikh.github.io'
+markdown: kramdown
+permalink: /:title/
+author:
+  name: 'Ruh-Al-Tarikh'
+collections:
+  episodes:
+    output: true
+    permalink: /episodes/:path/
 plugins:
   - jekyll-feed
-"@
-Set-Content -Path "_config.yml" -Value $ConfigContent
+  - jekyll-seo-tag
+theme: minima
+defaults:
+  - scope:
+      path: ''
+      type: 'episodes'
+    values:
+      layout: 'default'
