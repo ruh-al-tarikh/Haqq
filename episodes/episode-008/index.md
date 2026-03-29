@@ -1,23 +1,15 @@
 ---
-title: "Episode 008 - YouTube"
-description: "Explore forgotten Islamic history, prophetic stories, and hidden truths."
+title: "Episode 008 - Title Here"
 date: 2026-03-29
-tags: [Islamic history, Quran, prophetic stories, Haq, Ruh-Al-Tarikh]
+tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
 ---
 
-# Episode 008 - YouTube
+# Episode 008 - Title Here
 
-🎥 **Watch on YouTube:** [https://youtu.be/GXGE97FWaec?si=6l2XybzxkHLx1Ng8](https://youtu.be/GXGE97FWaec?si=6l2XybzxkHLx1Ng8)
-
----
+🎥 Watch on YouTube: [https://youtu.be/GXGE97FWaec?si=6l2XybzxkHLx1Ng8](https://youtu.be/GXGE97FWaec?si=6l2XybzxkHLx1Ng8)
 
 ## Script
-
-See script.txt for full episode content.
-
----
+See \script.txt\ for full transcript.
 
 ## Thumbnail
-
 ![Episode Thumbnail](thumbnail.jpg)
-

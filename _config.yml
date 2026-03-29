@@ -1,0 +1,10 @@
+$ConfigContent = @"
+title: "HAQ - Forgotten Islamic Stories"
+description: "Explore forgotten Islamic history, prophetic stories, and Quranic mysteries."
+baseurl: ""
+url: "https://ruh-al-tarikh.github.io/haqq"
+theme: minima
+plugins:
+  - jekyll-feed
+"@
+Set-Content -Path "_config.yml" -Value $ConfigContent
