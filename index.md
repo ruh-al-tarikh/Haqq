@@ -12,13 +12,14 @@ We release **weekly episodes** exploring hidden truths, historical lessons, and 
 
 ## Latest Episode
 
-🎥 **Episode 003 - YouTube**  
-[Watch on YouTube](https://youtu.be/S23pXdWweDs?si=kZHpjUrMsz-O-e1o)  
+🎥 **Episode 004 - YouTube**  
+[Watch on YouTube](https://youtu.be/YGGUplbuksU?si=3m1x8w1digWJPT6X)  
 
 ---
 
 ## All Episodes
 
+- [$(C:\Users\Rizwan\GitHub\Haqq\episodes\episode-004.Name.Replace('episode-','Episode '))](/episodes/episode-004/index.md)
 - [$(C:\Users\Rizwan\GitHub\Haqq\episodes\episode-003.Name.Replace('episode-','Episode '))](/episodes/episode-003/index.md)
 - [$(C:\Users\Rizwan\GitHub\Haqq\episodes\episode-002.Name.Replace('episode-','Episode '))](/episodes/episode-002/index.md)
 - [$(C:\Users\Rizwan\GitHub\Haqq\episodes\episode-001.Name.Replace('episode-','Episode '))](/episodes/episode-001/index.md)
