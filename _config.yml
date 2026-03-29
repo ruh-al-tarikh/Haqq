@@ -1,7 +1,6 @@
-title: HAQQ
-theme: minima
-
-collections:
-  episodes:
-    output: true
-    permalink: /episodes/:name/
+title: "HAQ - Forgotten Islamic Stories"
+email: "azrizwanm@gmail.com"
+description: "Discover forgotten Islamic history, Quranic mysteries, and prophetic storytelling."
+baseurl: ""
+url: "https://ruh-al-tarikh.github.io"
+theme: null

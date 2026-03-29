@@ -2,25 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 
-<header>
-  <a href="{{ '/' | relative_url }}">HAQ</a>
-  <a href="{{ '/about.html' | relative_url }}">About</a>
-  <a href="{{ '/projects.html' | relative_url }}">Projects</a>
-</header>
+{% include header.html %}
 
-<main>
+<main class="content">
   {{ content }}
 </main>
 
-<footer>
-  <p>© {{ site.time | date: "%Y" }} HAQ</p>
-</footer>
+{% include footer.html %}
 
 </body>
 </html>
