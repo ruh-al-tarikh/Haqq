@@ -1,6 +1,6 @@
 ---
 thumbnail: /assets/episodes/episode-007/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 007 - Title Here"
 date: 2026-03-30
 tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
