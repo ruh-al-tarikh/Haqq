@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+<header>
+  <a href="{{ '/' | relative_url }}">HAQ</a>
+  <a href="{{ '/about.html' | relative_url }}">About</a>
+  <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+<footer>
+  <p>© {{ site.time | date: "%Y" }} HAQ</p>
+</footer>
+
+</body>
+</html>
