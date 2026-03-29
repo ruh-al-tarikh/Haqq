@@ -1,6 +1,6 @@
 ---
 thumbnail: /assets/episodes/episode-004/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 004 - YouTube"
 description: "Explore forgotten Islamic history, prophetic stories, and hidden truths."
 date: 2026-03-29

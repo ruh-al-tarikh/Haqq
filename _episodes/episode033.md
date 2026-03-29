@@ -1,6 +1,6 @@
 ---
 thumbnail: /assets/episodes/episode-033/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 033 - Title Here"
 date: 2026-03-30
 tags: [HAQ, Islamic history, Ruh-Al-Tarikh]

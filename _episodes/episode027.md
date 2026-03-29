@@ -1,6 +1,6 @@
 ---
 thumbnail: /assets/episodes/episode-027/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 027 - Title Here"
 date: 2026-03-30
 tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
