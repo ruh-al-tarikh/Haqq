@@ -24,19 +24,7 @@ a:hover {
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .site-header {
-    background-color: #111;
-    border-bottom: 1px solid #f5d042;
-    padding: 1rem 2rem;
-}
-
-.site-header nav {
-=======
-=======
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
-header {
     background-color: var(--darker);
     border-bottom: 1px solid var(--gold);
     padding: 1rem 2rem;
@@ -45,16 +33,9 @@ header {
     z-index: 1000;
 }
 
-nav {
+.site-header nav {
     max-width: 1200px;
     margin: 0 auto;
-<<<<<<< HEAD
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 900px;
-=======
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,34 +54,6 @@ nav {
 .nav-links a {
     margin-left: 1.5rem;
     font-weight: 500;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--gold);
-    margin: 4px 0;
-}
-
-.content {
-    padding: 2rem;
-    max-width: 1000px;
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
-    margin: 0 auto;
-    min-height: 80vh;
-}
-
-<<<<<<< HEAD
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-<<<<<<< HEAD
 }
 
 .hamburger {
@@ -117,35 +70,7 @@ nav {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #f5d042;
-=======
-    color: var(--gold);
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
-}
-
-.nav-links {
-    display: flex;
-}
-
-.nav-links a {
-    margin-left: 1.5rem;
-<<<<<<< HEAD
-=======
-    font-weight: 500;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
     background-color: var(--gold);
-    margin: 4px 0;
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
 }
 
 .content {
@@ -155,110 +80,43 @@ nav {
     min-height: 80vh;
 }
 
-<<<<<<< HEAD
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.episode-card {
+    background-color: var(--darker);
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.episode-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.episode-info {
+    padding: 1rem;
+}
+
+.episode-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
 .site-footer {
-    padding: 1.5rem 2rem;
-    background-color: #111;
-    border-top: 1px solid #f5d042;
-    text-align: center;
-}
-
-ul li {
-    margin-bottom: 0.5rem;
-}
-
-@media (max-width: 600px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 4rem;
-        left: 0;
-        right: 0;
-        background-color: #111;
-        flex-direction: column;
-        padding: 1rem;
-        border-bottom: 1px solid #f5d042;
-        z-index: 1000;
-=======
-.episode-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.episode-card {
-    background-color: var(--darker);
-    border: 1px solid #333;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s, border-color 0.3s;
-}
-
-.episode-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--gold);
-}
-
-.episode-thumbnail {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.episode-info {
-    padding: 1rem;
-}
-
-.episode-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-=======
-.episode-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.episode-card {
-    background-color: var(--darker);
-    border: 1px solid #333;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s, border-color 0.3s;
-}
-
-.episode-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--gold);
-}
-
-.episode-thumbnail {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.episode-info {
-    padding: 1rem;
-}
-
-.episode-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
-footer {
     background-color: var(--darker);
     border-top: 1px solid var(--gold);
     padding: 2rem;
@@ -267,6 +125,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -277,10 +139,6 @@ footer {
         background-color: var(--darker);
         border-bottom: 1px solid var(--gold);
         padding: 1rem 0;
-<<<<<<< HEAD
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
-=======
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
     }
 
     .nav-links.show {
@@ -288,21 +146,28 @@ footer {
     }
 
     .nav-links a {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        margin: 0.5rem 0;
-        margin-left: 0;
-=======
-=======
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
         margin: 0.5rem 2rem;
     }
+}
 
-    .hamburger {
-        display: flex;
-<<<<<<< HEAD
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
-=======
->>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
-    }
+/* Accessibility Improvements */
+:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+}
+
+.episode-card:focus-within {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+}
+
+.cta-button:hover {
+    filter: brightness(1.1);
+    text-decoration: none;
+}
+
+.cta-button:active {
+    transform: scale(0.98);
 }
