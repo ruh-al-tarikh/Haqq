@@ -44,3 +44,12 @@ Discover forgotten Islamic history, Quranic mysteries, and powerful storytelling
 - [Episode 034 - Title Here](episodes/episode-034/index.md)
 - [Episode 035 - Title Here](episodes/episode-035/index.md)
 
+<<<<<<< HEAD
+=======
+{% assign episodes = site.pages | where_exp: "item", "item.path contains 'episode'" | sort: "path" | reverse %}
+<ul>
+{% for episode in episodes %}
+  <li><a href="{{ episode.url | relative_url }}">{{ episode.title }}</a></li>
+{% endfor %}
+</ul>
+>>>>>>> 10a797d5d9f523afb51396a4d99abeb4d2026531

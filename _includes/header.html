@@ -1,11 +1,11 @@
-<header>
+<header class="site-header">
   <nav>
     <a href="{{ '/' | relative_url }}" class="logo">HAQ</a>
-    <div class="hamburger" id="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <div class="nav-links" id="nav-links">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
@@ -13,12 +13,3 @@
     </div>
   </nav>
 </header>
-
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-</script>
