@@ -1,9 +1,24 @@
-<header class="site-header">
-  <div class="logo">
-    <a href="{{ '/' | relative_url }}">HAQ</a>
-  </div>
-  <nav class="nav-links">
-    <a href="{{ '/about.html' | relative_url }}">About</a>
-    <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+<header>
+  <nav>
+    <a href="{{ '/' | relative_url }}" class="logo">HAQ</a>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+    </div>
   </nav>
 </header>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>

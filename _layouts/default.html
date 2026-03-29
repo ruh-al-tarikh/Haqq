@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
 
-{% include header.html %}
+  {% include header.html %}
 
-<main class="content">
-  {{ content }}
-</main>
+  <main>
+    {{ content }}
+  </main>
 
-{% include footer.html %}
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} HAQ. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

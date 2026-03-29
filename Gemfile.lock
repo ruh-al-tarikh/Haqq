@@ -84,7 +84,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  jekyll
+  jekyll (~> 4.4.1)
   jekyll-feed
   jekyll-seo-tag
   minima
