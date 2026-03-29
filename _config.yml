@@ -1,22 +1,16 @@
-title: 'HAQ - Forgotten Islamic Stories'
-description: 'Discover forgotten Islamic history, Quranic mysteries, and prophetic storytelling.'
-baseurl: ''
-url: 'https://ruh-al-tarikh.github.io'
-markdown: kramdown
-permalink: /:title/
-author:
-  name: 'Ruh-Al-Tarikh'
+title: Haqq
+description: "Forgotten Islamic histories"
+
+theme: minima
+
+baseurl: "/Haqq"
+url: "https://ruh-al-tarikh.github.io"
+
 collections:
   episodes:
     output: true
-    permalink: /episodes/:path/
+    permalink: /episodes/:name/
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-theme: minima
-defaults:
-  - scope:
-      path: ''
-      type: 'episodes'
-    values:
-      layout: 'default'
