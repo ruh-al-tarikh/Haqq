@@ -11,10 +11,9 @@ Discover forgotten Islamic history, Quranic mysteries, and powerful storytelling
 
 ## Latest Episodes
 
+{% assign episodes = site.pages | where_exp: "item", "item.path contains 'episode'" | sort: "path" | reverse %}
 <ul>
-{% for episode in site.pages %}
-  {% if episode.path contains 'episode' %}
-    <li><a href="{{ episode.url }}">{{ episode.title }}</a></li>
-  {% endif %}
+{% for episode in episodes %}
+  <li><a href="{{ episode.url | relative_url }}">{{ episode.title }}</a></li>
 {% endfor %}
 </ul>
