@@ -1,37 +1,45 @@
+# ===========================================
+# Generate all episode folders and files
+# Idempotent: safe to run multiple times
+# ===========================================
+
 # Path to your CSV file
 $CSVPath = "C:\Users\Rizwan\GitHub\Haqq\episodes_list.csv"
 
-# Example CSV structure: episode_number,youtube_link,transcript_file
-# 005,https://youtu.be/4QI291kZ4K4,C:\Users\Rizwan\Transcripts\ep005.txt
+# Base folder for episodes
+$BaseFolder = "C:\Users\Rizwan\GitHub\Haqq\episodes"
 
 # Import CSV
 $episodes = Import-Csv -Path $CSVPath
 
-# Base folder
-$BaseFolder = "C:\Users\Rizwan\GitHub\Haqq\episodes"
-
 foreach ($ep in $episodes) {
+
+    # Format episode number with leading zeros
     $epNum = "{0:D3}" -f [int]$ep.episode_number
     $epFolder = Join-Path $BaseFolder "episode-$epNum"
-    
-    # Create episode folder
+
+    # Create episode folder if it doesn't exist
     if (-not (Test-Path $epFolder)) {
-        New-Item -ItemType Directory -Path $epFolder
+        New-Item -ItemType Directory -Path $epFolder | Out-Null
     }
 
-    # Create thumbnail placeholder
+    # Thumbnail.jpg: create only if it doesn't exist
     $thumbPath = Join-Path $epFolder "thumbnail.jpg"
-    if (-not (Test-Path $thumbPath)) { New-Item -ItemType File -Path $thumbPath }
+    if (-not (Test-Path $thumbPath)) {
+        New-Item -ItemType File -Path $thumbPath | Out-Null
+    }
 
-    # Create script.txt from transcript
+    # Script.txt: overwrite if transcript exists
     $scriptPath = Join-Path $epFolder "script.txt"
     if (Test-Path $ep.transcript_file) {
         Copy-Item -Path $ep.transcript_file -Destination $scriptPath -Force
     } else {
-        New-Item -ItemType File -Path $scriptPath
+        if (-not (Test-Path $scriptPath)) {
+            New-Item -ItemType File -Path $scriptPath | Out-Null
+        }
     }
 
-    # Create index.md
+    # Index.md: always update with latest YouTube link and date
     $indexPath = Join-Path $epFolder "index.md"
     $date = Get-Date -Format "yyyy-MM-dd"
     $youtubeLink = $ep.youtube_link
@@ -49,12 +57,14 @@ tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
 🎥 Watch on YouTube: [$youtubeLink]($youtubeLink)
 
 ## Script
-See \`script.txt\` for full transcript.
+See `script.txt` for full transcript.
 
 ## Thumbnail
 ![Episode Thumbnail](thumbnail.jpg)
 "@
+
+    # Write/overwrite index.md
     Set-Content -Path $indexPath -Value $indexContent
 }
 
-Write-Host "All episodes generated successfully!"
+Write-Host "✅ All episodes generated/updated successfully!"

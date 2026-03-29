@@ -9,7 +9,7 @@ tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
 🎥 Watch on YouTube: [https://youtu.be/t7xYaAz-evM?si=ZBpsvqJvLBPoWDcy](https://youtu.be/t7xYaAz-evM?si=ZBpsvqJvLBPoWDcy)
 
 ## Script
-See \script.txt\ for full transcript.
+See script.txt for full transcript.
 
 ## Thumbnail
 ![Episode Thumbnail](thumbnail.jpg)
