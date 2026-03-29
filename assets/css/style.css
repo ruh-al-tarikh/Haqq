@@ -25,6 +25,7 @@ a:hover {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .site-header {
     background-color: #111;
     border-bottom: 1px solid #f5d042;
@@ -33,6 +34,8 @@ a:hover {
 
 .site-header nav {
 =======
+=======
+>>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
 header {
     background-color: var(--darker);
     border-bottom: 1px solid var(--gold);
@@ -45,14 +48,55 @@ header {
 nav {
     max-width: 1200px;
     margin: 0 auto;
+<<<<<<< HEAD
 >>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 900px;
-    margin: 0 auto;
+=======
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--gold);
+    margin: 4px 0;
+}
+
+.content {
+    padding: 2rem;
+    max-width: 1000px;
+>>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+<<<<<<< HEAD
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -176,6 +220,44 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
+=======
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.episode-card {
+    background-color: var(--darker);
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.episode-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.episode-info {
+    padding: 1rem;
+}
+
+.episode-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+>>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
 footer {
     background-color: var(--darker);
     border-top: 1px solid var(--gold);
@@ -195,6 +277,9 @@ footer {
         background-color: var(--darker);
         border-bottom: 1px solid var(--gold);
         padding: 1rem 0;
+<<<<<<< HEAD
+>>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
+=======
 >>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
     }
 
@@ -204,14 +289,20 @@ footer {
 
     .nav-links a {
 <<<<<<< HEAD
+<<<<<<< HEAD
         margin: 0.5rem 0;
         margin-left: 0;
 =======
+=======
+>>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
         margin: 0.5rem 2rem;
     }
 
     .hamburger {
         display: flex;
+<<<<<<< HEAD
+>>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
+=======
 >>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
     }
 }

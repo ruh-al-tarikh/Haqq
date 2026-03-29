@@ -12,6 +12,7 @@ layout: default
 <hr style="border: 0; border-top: 1px solid #333; margin: 2rem 0;">
 
 <h2>Latest Episodes</h2>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ---
@@ -59,6 +60,9 @@ layout: default
 </ul>
 >>>>>>> 10a797d5d9f523afb51396a4d99abeb4d2026531
 =======
+=======
+
+>>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
 <div class="episode-grid">
   {% assign episodes = site.episodes | sort: "path" | reverse %}
   {% for episode in episodes %}
@@ -72,4 +76,7 @@ layout: default
   </div>
   {% endfor %}
 </div>
+<<<<<<< HEAD
+>>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
+=======
 >>>>>>> e5c282c (Refactor episodes to Jekyll collection and enhance Web UI)
