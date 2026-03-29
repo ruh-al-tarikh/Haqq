@@ -1,4 +1,3 @@
-$workflow = @"
 name: Deploy HAQ Jekyll Site
 
 on:
@@ -40,9 +39,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
-"@
-
-Set-Content -Path ".github/workflows/jekyll.yml" -Value $workflow
