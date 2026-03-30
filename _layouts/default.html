@@ -74,12 +74,14 @@
       const searchInput = document.getElementById('episode-search');
       const episodeGrid = document.getElementById('episode-grid');
       const searchStatus = document.getElementById('search-status');
+      const noResults = document.getElementById('no-results');
+      const clearSearchBtn = document.getElementById('clear-search');
+      const sectionTitle = document.querySelector('.section-title');
 
       if (searchInput && episodeGrid) {
         const episodes = Array.from(episodeGrid.querySelectorAll('.episode-card'));
 
-        searchInput.addEventListener('input', (e) => {
-          const query = e.target.value.toLowerCase().trim();
+        const handleSearch = (query) => {
           let visibleCount = 0;
 
           episodes.forEach(card => {
@@ -92,10 +94,34 @@
             }
           });
 
-          if (searchStatus) {
-            searchStatus.textContent = `Showing ${visibleCount} results for "${query}"`;
+          // Toggle visibility of sections based on search results
+          if (noResults) {
+            noResults.style.display = (visibleCount === 0 && query !== '') ? 'block' : 'none';
           }
+          if (episodeGrid) {
+            episodeGrid.style.display = (visibleCount === 0 && query !== '') ? 'none' : 'grid';
+          }
+          if (sectionTitle) {
+            sectionTitle.style.display = (visibleCount === 0 && query !== '') ? 'none' : 'block';
+          }
+
+          if (searchStatus) {
+            searchStatus.textContent = query === '' ? '' : `Showing ${visibleCount} results for "${query}"`;
+          }
+        };
+
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          handleSearch(query);
         });
+
+        if (clearSearchBtn) {
+          clearSearchBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            handleSearch('');
+            searchInput.focus();
+          });
+        }
       }
     });
   </script>
