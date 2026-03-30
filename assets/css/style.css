@@ -495,3 +495,26 @@ a:hover {
     display: flex;
     align-items: center;
 }
+
+/* No Results State */
+.clear-search-btn {
+    background-color: var(--gold);
+    color: var(--dark);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.clear-search-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(245, 208, 66, 0.3);
+}
+
+.clear-search-btn:active {
+    transform: scale(0.98);
+}
