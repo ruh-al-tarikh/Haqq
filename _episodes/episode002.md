@@ -1,6 +1,6 @@
 ---
 thumbnail: /assets/episodes/episode-002/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 002 - The Hidden Truth"
 description: "Exploring forgotten Islamic history, prophetic stories, and Quranic mysteries."
 date: 2026-03-29

@@ -4,6 +4,7 @@ description: "Discover forgotten Islamic history, Quranic mysteries, and prophet
 baseurl: ""
 url: "https://ruh-al-tarikh.github.io"
 theme: null
+future: true
 collections:
   episodes:
     output: true
