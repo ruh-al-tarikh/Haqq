@@ -1,11 +1,11 @@
 ---
 thumbnail: /assets/episodes/episode-003/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 003 - YouTube"
 description: "Explore forgotten Islamic history, prophetic stories, and hidden truths."
 date: 2026-03-29
-tags: [Islamic history, Quran, prophetic stories, Haq, Ruh-Al-Tarikh]
-
+tags: [Prophecies]
+youtube_url: "https://youtu.be/S23pXdWweDs?si=kZHpjUrMsz-O-e1o"
 ---
 # Episode 003 - YouTube
 🎥 **Watch on YouTube:** [https://youtu.be/S23pXdWweDs?si=kZHpjUrMsz-O-e1o](https://youtu.be/S23pXdWweDs?si=kZHpjUrMsz-O-e1o)

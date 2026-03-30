@@ -1,9 +1,20 @@
 title: "HAQ - Forgotten Islamic Stories"
 email: "azrizwanm@gmail.com"
 description: "Discover forgotten Islamic history, Quranic mysteries, and prophetic storytelling."
-baseurl: ""
+baseurl: "/Haqq"
 url: "https://ruh-al-tarikh.github.io"
-theme: null
+github_username: "ruh-al-tarikh"
+youtube_url: "https://www.youtube.com/@Ruh-Al-Tarikh"
+
+future: true
 collections:
   episodes:
     output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "episodes"
+    values:
+      layout: "episode"

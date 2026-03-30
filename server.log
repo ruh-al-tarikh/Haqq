@@ -1,1 +1,145 @@
-127.0.0.1 - - [29/Mar/2026 21:45:19] "HEAD / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1329, in <module>
+    test(
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1276, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1323, in server_bind
+    return super().server_bind()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [30/Mar/2026 13:45:00] "GET /Haqq/ HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/ HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/img/logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-035/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-034/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-032/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-030/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-033/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-031/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-029/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-028/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-027/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-026/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-025/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-024/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-023/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-022/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-021/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-020/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-019/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-018/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-017/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-016/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-015/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-014/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-013/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-012/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:45:45] "GET /Haqq/assets/episodes/episode-001/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:12] "GET /Haqq/ HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:12] "GET /Haqq/assets/img/logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:12] "GET /Haqq/assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:12] "GET /Haqq/assets/episodes/episode-035/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-034/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-032/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-033/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-031/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-030/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-028/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-029/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-027/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-026/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-025/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-024/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-023/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-022/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-021/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-020/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-019/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-018/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-017/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-016/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-015/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-014/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-013/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-012/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:13] "GET /Haqq/assets/episodes/episode-001/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:14] "GET /Haqq/assets/episodes/episode-002/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:14] "GET /Haqq/assets/episodes/episode-004/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:46:15] code 404, message File not found
+127.0.0.1 - - [30/Mar/2026 13:46:15] "GET /Haqq/episodes/episode001/ HTTP/1.1" 404 -
+127.0.0.1 - - [30/Mar/2026 13:47:38] "GET /Haqq/ HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:38] "GET /Haqq/assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:38] "GET /Haqq/assets/img/logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-035/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-034/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-033/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-032/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-031/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-030/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-029/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-026/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-027/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-024/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-028/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-025/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-021/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-023/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-022/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-020/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-019/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-018/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-017/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-016/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-015/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-014/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-013/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-012/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:39] "GET /Haqq/assets/episodes/episode-001/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:40] "GET /Haqq/assets/episodes/episode-004/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:40] "GET /Haqq/assets/episodes/episode-002/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:41] "GET /Haqq/episodes/episode001.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:47:42] code 404, message File not found
+127.0.0.1 - - [30/Mar/2026 13:47:42] "GET /Haqq/about/index.html HTTP/1.1" 404 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/img/logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-035/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-034/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-030/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-031/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-032/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-033/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-029/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-028/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-027/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-026/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-024/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-025/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-023/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-022/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-020/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-021/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-019/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-018/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-017/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-015/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-016/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-014/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-013/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-012/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:37] "GET /Haqq/assets/episodes/episode-001/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:38] "GET /Haqq/assets/episodes/episode-002/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:38] "GET /Haqq/assets/episodes/episode-004/thumbnail.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:39] "GET /Haqq/episodes/episode001.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:40] "GET /Haqq/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/Mar/2026 13:49:41] "GET /Haqq/projects.html HTTP/1.1" 200 -

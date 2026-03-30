@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<article class="episode-detail">
+  <header class="episode-header">
+    <h1 class="episode-detail-title">{{ page.title }}</h1>
+    <div class="episode-date">{{ page.date | date: "%B %d, %Y" }}</div>
+  </header>
+
+  <div class="video-container">
+    {% if page.youtube_url %}
+      {% if page.youtube_url contains 'v=' %}
+        {% assign youtube_id = page.youtube_url | split: 'v=' | last | split: '&' | first %}
+      {% elsif page.youtube_url contains 'youtu.be/' %}
+        {% assign youtube_id = page.youtube_url | split: 'youtu.be/' | last | split: '?' | first %}
+      {% endif %}
+      <iframe
+        src="https://www.youtube.com/embed/{{ youtube_id }}"
+        title="{{ page.title }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    {% endif %}
+  </div>
+
+  <div class="episode-content">
+    {{ content }}
+  </div>
+
+  <div class="cta-section" style="margin-top: 4rem; text-align: center;">
+    <p>Enjoyed this episode? Subscribe for more powerful Islamic stories.</p>
+    <a href="{{ site.youtube_url }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="cta-button"
+       aria-label="Subscribe on YouTube (opens in a new window)">
+      🔔 Subscribe on YouTube
+    </a>
+  </div>
+
+  <footer class="episode-footer">
+    <a href="{{ '/' | relative_url }}" class="back-link">← Back to All Episodes</a>
+  </footer>
+</article>

@@ -1,10 +1,10 @@
 ---
 thumbnail: /assets/episodes/episode-015/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 015 - Title Here"
 date: 2026-03-30
 tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
-
+youtube_url: "https://youtu.be/YGGUplbuksU?si=SHSE0JyrYRhdwSGt"
 ---
 # Episode 015 - Title Here
 🎥 Watch on YouTube: [https://youtu.be/YGGUplbuksU?si=SHSE0JyrYRhdwSGt](https://youtu.be/YGGUplbuksU?si=SHSE0JyrYRhdwSGt)

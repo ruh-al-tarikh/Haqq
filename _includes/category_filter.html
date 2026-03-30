@@ -1,0 +1,93 @@
+<div class="category-filter-container" style="text-align: center; margin-bottom: 2rem;">
+  <div class="category-tags" id="category-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem;">
+    <button class="category-tag active" data-category="all" aria-pressed="true">All</button>
+    {% assign all_tags = "" | split: "," %}
+    {% for episode in site.episodes %}
+      {% if episode.tags %}
+        {% for tag in episode.tags %}
+          {% unless all_tags contains tag %}
+            {% assign all_tags = all_tags | push: tag %}
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% assign sorted_tags = all_tags | sort %}
+    {% for tag in sorted_tags %}
+      <button class="category-tag" data-category="{{ tag | slugify }}" aria-pressed="false">{{ tag }}</button>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.category-tag {
+  background: var(--darker);
+  color: var(--text-muted);
+  border: 1px solid rgba(245, 208, 66, 0.2);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.category-tag:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.category-tag.active {
+  background: var(--gold);
+  color: var(--dark);
+  border-color: var(--gold);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const categoryButtons = document.querySelectorAll('.category-tag');
+  const episodeCards = document.querySelectorAll('.episode-card');
+  const searchInput = document.getElementById('episode-search');
+
+  function filterEpisodes() {
+    const activeCategory = document.querySelector('.category-tag.active').dataset.category;
+    const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    let visibleCount = 0;
+
+    episodeCards.forEach(card => {
+      const title = card.querySelector('.episode-title').textContent.toLowerCase();
+      const tags = JSON.parse(card.dataset.tags || '[]');
+      const matchesCategory = activeCategory === 'all' || tags.includes(activeCategory);
+      const matchesSearch = title.includes(searchQuery);
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const searchStatus = document.getElementById('search-status');
+    if (searchStatus) {
+      searchStatus.textContent = `Showing ${visibleCount} episodes`;
+    }
+  }
+
+  categoryButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      categoryButtons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+      filterEpisodes();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', filterEpisodes);
+  }
+});
+</script>

@@ -3,33 +3,43 @@ title: "HAQ - Forgotten Islamic Stories"
 layout: default
 ---
 
-<div class="hero" style="text-align: center; padding: 3rem 0;">
+<div class="hero">
   <h1>Welcome to HAQ</h1>
-  <p style="font-size: 1.2rem;">Discover forgotten Islamic history, Quranic mysteries, and powerful storytelling.</p>
-  <a href="https://www.youtube.com/@Ruh-Al-Tarikh"
+  <p>Discover forgotten Islamic history, Quranic mysteries, and powerful storytelling.</p>
+  <a href="{{ site.youtube_url }}"
      target="_blank"
      rel="noopener noreferrer"
      class="cta-button"
-     aria-label="Visit our YouTube Channel (opens in a new window)"
-     style="display: inline-block; background: var(--gold); color: var(--dark); padding: 0.8rem 1.5rem; border-radius: 5px; font-weight: bold; margin-top: 1rem; transition: transform 0.2s, filter 0.2s;">
+     aria-label="Visit our YouTube Channel (opens in a new window)">
     🎥 Visit our YouTube Channel
   </a>
 </div>
 
-<hr style="border: 0; border-top: 1px solid #333; margin: 2rem 0;">
+<div class="search-container">
+  <input type="text" id="episode-search" placeholder="Search episodes..." aria-label="Search episodes by title">
+  <div id="search-status" class="sr-only" aria-live="polite"></div>
+</div>
 
-<h2>Latest Episodes</h2>
+{% include category_filter.html %}
 
-<div class="episode-grid">
+<h2 class="section-title">Latest Episodes</h2>
+
+<div class="episode-grid" id="episode-grid">
   {% assign episodes = site.episodes | sort: "path" | reverse %}
   {% for episode in episodes %}
-  <div class="episode-card">
+  <article class="episode-card" data-tags='[{% for tag in episode.tags %}"{{ tag | slugify }}"{% if forloop.last == false %},{% endif %}{% endfor %}]'>
     <a href="{{ episode.url | relative_url }}">
-      <img src="{{ episode.thumbnail | relative_url }}" alt="{{ episode.title }}" class="episode-thumbnail">
+      <div class="episode-thumbnail-container">
+        <img src="{{ episode.thumbnail | relative_url }}" alt="{{ episode.title }}" class="episode-thumbnail" loading="lazy">
+      </div>
       <div class="episode-info">
-        <div class="episode-title">{{ episode.title }}</div>
+        <h3 class="episode-title">{{ episode.title }}</h3>
+        <div class="episode-meta">
+          <span>{{ episode.date | date: "%B %d, %Y" }}</span>
+          <span class="read-more">Learn more →</span>
+        </div>
       </div>
     </a>
-  </div>
+  </article>
   {% endfor %}
 </div>

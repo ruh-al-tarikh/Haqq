@@ -1,11 +1,11 @@
 ---
 thumbnail: /assets/episodes/episode-002/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 002 - The Hidden Truth"
 description: "Exploring forgotten Islamic history, prophetic stories, and Quranic mysteries."
 date: 2026-03-29
-tags: [Islamic history, Quran, prophetic stories, Haq, Ruh-Al-Tarikh]
-
+tags: [History, Quran]
+youtube_url: "https://youtu.be/geikNJ3uZA0"
 ---
 # Episode 002 - The Hidden Truth
 🎥 **Watch on YouTube:** [Click here](https://youtu.be/geikNJ3uZA0)

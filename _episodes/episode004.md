@@ -1,11 +1,11 @@
 ---
 thumbnail: /assets/episodes/episode-004/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 004 - YouTube"
 description: "Explore forgotten Islamic history, prophetic stories, and hidden truths."
 date: 2026-03-29
-tags: [Islamic history, Quran, prophetic stories, Haq, Ruh-Al-Tarikh]
-
+tags: [History]
+youtube_url: "https://youtu.be/YGGUplbuksU?si=3m1x8w1digWJPT6X"
 ---
 # Episode 004 - YouTube
 🎥 **Watch on YouTube:** [https://youtu.be/YGGUplbuksU?si=3m1x8w1digWJPT6X](https://youtu.be/YGGUplbuksU?si=3m1x8w1digWJPT6X)

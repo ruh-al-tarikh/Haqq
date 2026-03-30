@@ -1,10 +1,10 @@
 ---
 thumbnail: /assets/episodes/episode-010/thumbnail.jpg
-layout: default
+layout: episode
 title: "Episode 010 - Title Here"
 date: 2026-03-30
 tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
-
+youtube_url: "https://youtu.be/qJYnittyzaM?si=4nxBqg5nJagQGKsX"
 ---
 # Episode 010 - Title Here
 🎥 Watch on YouTube: [https://youtu.be/qJYnittyzaM?si=4nxBqg5nJagQGKsX](https://youtu.be/qJYnittyzaM?si=4nxBqg5nJagQGKsX)
