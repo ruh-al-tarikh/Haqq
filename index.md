@@ -1,35 +1,30 @@
 ---
-title: "HAQ - Forgotten Islamic Stories"
 layout: default
+title: Home
 ---
 
-<div class="hero" style="text-align: center; padding: 3rem 0;">
-  <h1>Welcome to HAQ</h1>
-  <p style="font-size: 1.2rem;">Discover forgotten Islamic history, Quranic mysteries, and powerful storytelling.</p>
-  <a href="https://www.youtube.com/@Ruh-Al-Tarikh"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="cta-button"
-     aria-label="Visit our YouTube Channel (opens in a new window)"
-     style="display: inline-block; background: var(--gold); color: var(--dark); padding: 0.8rem 1.5rem; border-radius: 5px; font-weight: bold; margin-top: 1rem; transition: transform 0.2s, filter 0.2s;">
-    🎥 Visit our YouTube Channel
-  </a>
-</div>
-
-<hr style="border: 0; border-top: 1px solid #333; margin: 2rem 0;">
-
-<h2>Latest Episodes</h2>
-
-<div class="episode-grid">
-  {% assign episodes = site.episodes | sort: "path" | reverse %}
-  {% for episode in episodes %}
-  <div class="episode-card">
-    <a href="{{ episode.url | relative_url }}">
-      <img src="{{ episode.thumbnail | relative_url }}" alt="{{ episode.title }}" class="episode-thumbnail">
-      <div class="episode-info">
-        <div class="episode-title">{{ episode.title }}</div>
-      </div>
-    </a>
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>?? HAQ</h1>
+    <p>Uncovering forgotten Islamic history, Quranic mysteries, and prophetic storytelling.</p>
+    <div class="hero-buttons">
+      <a href="#episodes" class="btn">?? Browse Episodes</a>
+      <a href="https://www.youtube.com/@Ruh-Al-Tarikh" class="btn">? YouTube Channel</a>
+    </div>
   </div>
+</section>
+
+<section id="episodes">
+  <h2>?? Documentary Archive</h2>
+  <div class="episodes-grid">
+  {% assign episode_pages = site.pages | where_exp: "page", "page.path contains 'episodes/episode-'" %}
+  {% for episode in episode_pages reversed %}
+    <div class="episode-card">
+      <img src="{{ '/assets/thumbnails/default-thumb.jpg' | relative_url }}" alt="{{ episode.title }}">
+      <h3>{{ episode.title }}</h3>
+      <p>Explore this forgotten truth from Islamic history.</p>
+      <a href="{{ episode.url }}" class="btn-small">Read Episode ?</a>
+    </div>
   {% endfor %}
-</div>
+  </div>
+</section>
