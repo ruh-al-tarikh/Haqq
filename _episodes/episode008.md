@@ -1,0 +1,13 @@
+---
+thumbnail: /assets/episodes/episode-008/thumbnail.jpg
+layout: episode
+title: "Episode 008 - Title Here"
+date: 2026-03-29
+tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
+
+---
+
+🎥 Watch on YouTube: [https://youtu.be/GXGE97FWaec?si=6l2XybzxkHLx1Ng8](https://youtu.be/GXGE97FWaec?si=6l2XybzxkHLx1Ng8)
+## Script
+See script.txt for full transcript.
+## Thumbnail

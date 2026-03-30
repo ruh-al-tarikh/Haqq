@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<article class="episode-page fade-in">
+  <div class="episode-header">
+    <h1 style="font-size: 2.5rem; margin-bottom: 2rem; color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 1rem; display: inline-block;">{{ page.title }}</h1>
+    <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.title }}" class="episode-hero-img">
+  </div>
+
+  <div class="episode-body" style="font-size: 1.1rem; line-height: 1.8; color: #ddd; max-width: 800px; margin: 0 auto;">
+    {{ content }}
+
+    <div style="text-align: center; margin: 4rem 0;">
+      <a href="https://www.youtube.com/@Ruh-Al-Tarikh" target="_blank" class="youtube-btn">🎥 Watch Full Episode on YouTube</a>
+    </div>
+  </div>
+
+  <div class="episode-nav">
+    {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="ep-nav-link" style="text-align: left;">
+        <span style="display: block; font-size: 0.8rem; color: #888;">← PREVIOUS CHRONICLE</span>
+        {{ page.previous.title }}
+      </a>
+    {% else %}
+      <div></div>
+    {% endif %}
+
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="ep-nav-link" style="text-align: right;">
+        <span style="display: block; font-size: 0.8rem; color: #888;">NEXT CHRONICLE →</span>
+        {{ page.next.title }}
+      </a>
+    {% endif %}
+  </div>
+</article>

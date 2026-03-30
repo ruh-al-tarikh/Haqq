@@ -1,0 +1,13 @@
+---
+thumbnail: /assets/episodes/episode-027/thumbnail.jpg
+layout: episode
+title: "Episode 027 - Title Here"
+date: 2026-03-29
+tags: [HAQ, Islamic history, Ruh-Al-Tarikh]
+
+---
+
+🎥 Watch on YouTube: [https://youtu.be/4a7qA2bGfa4?si=6ueI3AWqx23EeF4L](https://youtu.be/4a7qA2bGfa4?si=6ueI3AWqx23EeF4L)
+## Script
+See script.txt for full transcript.
+## Thumbnail
