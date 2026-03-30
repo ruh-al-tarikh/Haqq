@@ -20,6 +20,11 @@ layout: default
   <div id="search-status" class="sr-only" aria-live="polite"></div>
 </div>
 
+<div id="no-results" class="no-results" style="display: none; text-align: center; padding: 3rem 1rem;">
+  <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">No episodes found matching your search.</p>
+  <button id="clear-search" class="clear-search-btn">Clear search</button>
+</div>
+
 <h2 class="section-title">Latest Episodes</h2>
 
 <div class="episode-grid" id="episode-grid">
